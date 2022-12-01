@@ -1,8 +1,14 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
+import Head from "next/head";
+import Image from "next/image";
+import buildspaceLogo from "../assets/buildspace-logo.png";
+import { useState } from "react";
 
 const Home = () => {
+  const [userInput, setUserInput] = useState("");
+  const onUserChangedText = (event) => {
+    setUserInput(event.target.value);
+  };
+
   return (
     <div className="root">
       <Head>
@@ -11,10 +17,25 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>sup, insert your headline here</h1>
+            <h1>Automate Your Bio Creation with GPT-3</h1>
           </div>
           <div className="header-subtitle">
-            <h2>insert your subtitle here</h2>
+            <h2>Generate a unique bio with GPT-3 technology</h2>
+          </div>
+        </div>
+        <div className="prompt-container">
+          <textarea
+            placeholder="start typing here"
+            className="prompt-box"
+            value={userInput}
+            onChange={onUserChangedText}
+          />
+          <div className="prompt-buttons">
+            <a className="generate-button" onClick={null}>
+              <div className="generate">
+                <p>Generate</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
