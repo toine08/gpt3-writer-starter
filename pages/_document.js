@@ -5,10 +5,10 @@ export default function Document() {
     <Html>
       <Head>
         <meta property="og:title" content="Twitter Bio generator" key="title"/>
-        <meta property="og:description" content="GPT Twitter Bio generator" key="description"/>
+        <meta property="og:description" content="GPT Twitter Bio Generator" key="description"/>
         <meta
           property="og:image"
-          content="../assets/card-og.jpg"
+          content="https://ipfs.io/ipfs/QmNiAMzLp8sQMHgtfpnb35hvnExdcta4SYDkWdTtmJj7pc"
         />
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
