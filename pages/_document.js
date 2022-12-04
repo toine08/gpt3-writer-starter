@@ -8,7 +8,7 @@ export default function Document() {
         <meta property="og:description" content="Twitter Bio Generator" key="description"/>
         <meta
           property="og:image"
-          content="https://ipfs.io/ipfs/Qmcc7qV4Hr8YxYFPepH3a1iw8KZNfTbtDdHcBaCUL9aPHM/card-og.jpg"
+          content="https://res.cloudinary.com/dfinarzav/image/upload/v1670173070/card-og.jpg"
         />
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
