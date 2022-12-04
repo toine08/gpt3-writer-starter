@@ -5,7 +5,7 @@ const configuration = new Configuration({
 });
 
 const openai = new OpenAIApi(configuration);
-const basePromptPrefix = "Write my a short bio for my twitter account. With those info: ";
+const basePromptPrefix = "Write my a short, and decontract bio for my twitter account without any hashtag. With those info: ";
 const generateAction = async(req, res)=>{
 
     //run first prompt 
