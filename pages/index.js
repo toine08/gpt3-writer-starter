@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import buildspaceLogo from "../assets/buildspace-logo.png";
 import { useState } from "react";
+import backgroundImage from "../assets/background.jpg"
 
 const Home = () => {
   const [userInput, setUserInput] = useState("");
@@ -36,8 +37,9 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>Bio Generator</title>
       </Head>
+      <Image src={backgroundImage} className="background-image" />
       <div className="container">
         <div className="header">
           <div className="header-title">
